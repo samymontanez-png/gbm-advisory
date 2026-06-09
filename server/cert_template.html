@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:'GBM Sans';src:url(assets/GBMSans-Regular.otf);font-weight:400;}
+@font-face{font-family:'GBM Sans';src:url(assets/GBMSans-Medium.otf);font-weight:500;}
+@font-face{font-family:'GBM Sans';src:url(assets/GBMSans-Bold.otf);font-weight:700;}
+:root{--azul:#424EE0;--negro:#1D1D20;--gris04:#8C8C8C;--gris05:#54565A;--panel:#F6F7FC;--frame:#E4E7F2;}
+*{box-sizing:border-box;margin:0;padding:0;}
+@page{size:A4 landscape;margin:0;}
+html,body{font-family:'GBM Sans',sans-serif;color:var(--negro);}
+.cert{width:297mm;height:210mm;background:var(--frame);padding:9mm;}
+.panel{position:relative;width:100%;height:100%;background:var(--panel);border:1px solid #E0E3F0;border-radius:7mm;overflow:hidden;}
+.logo{position:absolute;top:15mm;left:20mm;width:54mm;}
+.univ{position:absolute;top:26mm;left:20mm;width:44mm;}
+.logo-tr{position:absolute;top:16mm;right:20mm;width:50mm;}
+.head{position:absolute;top:62mm;left:20mm;}
+.head .eyebrow{font-size:9.5pt;letter-spacing:2.6px;color:var(--gris05);font-weight:700;text-transform:uppercase;margin-bottom:5mm;}
+.head .t1{font-size:27pt;font-weight:700;line-height:1.04;letter-spacing:-.4pt;}
+.head .t2{font-size:27pt;font-weight:700;line-height:1.04;letter-spacing:-.4pt;color:var(--azul);}
+.body{position:absolute;top:108mm;left:20mm;right:95mm;}
+.body .lbl{font-size:11pt;color:var(--gris05);}
+.body .name{font-size:34pt;font-weight:500;letter-spacing:-.4pt;margin:3mm 0 2mm;line-height:1;}
+.body .rule{height:1.4pt;background:var(--negro);width:118mm;max-width:100%;margin-bottom:6mm;}
+.body .pill{display:inline-block;margin-top:4mm;background:var(--azul);color:#fff;font-weight:700;font-size:13pt;border-radius:9px;padding:9px 18px;}
+.meta{position:absolute;left:20mm;bottom:15mm;font-size:9pt;color:var(--gris05);letter-spacing:.2px;}
+.meta b{color:var(--negro);font-weight:700;}
+.sigs{position:absolute;right:20mm;top:74mm;width:74mm;}
+.sig{margin-bottom:13mm;}
+.sig .sigline{height:1pt;background:#C7CADA;width:100%;margin-bottom:3mm;}
+.sig .sn{font-weight:700;font-size:11pt;text-align:center;}
+.sig .stt{font-size:8.5pt;color:var(--gris05);text-align:center;margin-top:1mm;line-height:1.3;}
+</style></head>
+<body>
+<div class="cert"><div class="panel">
+  <img class="logo" src="assets/adv_black.png">
+  <img class="univ" src="assets/univ_black.png">
+  <img class="logo-tr" src="assets/adv_black.png">
+  <div class="head">
+    <div class="eyebrow">GBM Advisory</div>
+    <div class="t1">Constancia de</div>
+    <div class="t2">terminación</div>
+  </div>
+  <div class="body">
+    <div class="lbl">Este documento certifica que</div>
+    <div class="name">__NAME__</div>
+    <div class="rule"></div>
+    <div class="lbl">completó satisfactoriamente y aprobó</div>
+    <div class="pill">__PROGRAM__</div>
+  </div>
+  <div class="meta">
+    <span>__DATE__</span> &nbsp; · &nbsp; Calificación obtenida: <b>__SCORE__</b>
+    &nbsp; · &nbsp; Certificado válido · ID: <b>__FOLIO__</b>
+  </div>
+  <div class="sigs">
+    <div class="sig"><div class="sigline"></div><div class="sn">Juan Carlos Herrera</div><div class="stt">Chief of Advisory &amp; Investment Solutions · GBM</div></div>
+    <div class="sig"><div class="sigline"></div><div class="sn">Samuel Montañez</div><div class="stt">Director Académico · Universidad GBM</div></div>
+  </div>
+</div></div>
+</body></html>
